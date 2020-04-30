@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <title>Массив Аргументов arguments</title>
+        <meta charset="utf-8">
+        <script type="text/javascript">  
+            function f(a, b, c) {
+                if (arguments.length != 3) {
+                    document.write("<p><b style='color:red;'>ERROR:</b> <em>Требуется три аргумента при вызове. Функция вызвана с " 
+                    + arguments.length + " параметрами!</em>") ;
+                } else {
+                    document.write("<p><b style='color:green;'>Правильный вызов функции:</b> Аргументы: ");
+                    for (let index = 0; index < arguments.length; index++) {
+                        document.write(arguments[index] + ", ");                       
+                    }
+                }
+            }
+            f(1,2,3,4);
+            f(1,2,3);
+            f(1,2);
+        </script>
+    
+    
+    </head>
+    <body>
+        
+    </body>
+</html>

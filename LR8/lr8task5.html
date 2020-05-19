@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <style type="text/css">
+        td {
+        border: 1px solid #000;
+        padding: 5px
+        }
+    </style>
+    <script>
+        let sample = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
+        let mapped = sample.map(elem => elem * 10);    
+
+        var countArr = mapped.length;
+        var table = document.createElement('table');
+        document.write('<div className="tracks-table"><table className="table">');
+        for (var i = 0; i < countArr; i++) {
+        var elementArr = mapped[i];    
+
+        document.write('<tr className="mess-hide"><td className="name"><h4>' + elementArr +  '</h4></td></tr>');
+        }
+
+        document.write('</table></div>');
+
+    </script>
+</head>
+<body>    
+
+</body>
+</html>
